@@ -40,7 +40,7 @@ To get started with Learnify, follow these simple steps:
 
 ### Installation
 
-Learnify is a web-based platform, so there's no need for installation. Simply visit our website at [https://github.com/taiwoajasa245/Learnify](https://www.learnify.com).
+Learnify is a web-based platform, so there's no need for installation. Simply visit our website at [https://github.com/taiwoajasa245/Learnify](https://github.com/taiwoajasa245/Learnify).
 
 <!-- ## Usage
 
