@@ -35,9 +35,9 @@ dots.forEach((item) => {
     item.addEventListener('click', () =>  { myFunction()})
 })
 
-dots.forEach((item) => { 
+moreText.forEach((itemm) => { 
     // console.log(item);
-    item.addEventListener('click', () =>  { myFunction()})
+    itemm.addEventListener('click', () =>  { myFunction()})
 })
 
 
@@ -48,10 +48,10 @@ function myFunction() {
     if (item.style.display === "none") {
       item.style.display = "inline";
       items.innerHTML = "Read more";
-      moreText.style.display = "none";
+      itemm.style.display = "none";
     } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
+      item.style.display = "none";
+      items.innerHTML = "Read less";
+      itemm.style.display = "inline";
     }
 }
