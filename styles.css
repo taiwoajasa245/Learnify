@@ -118,5 +118,9 @@ img {
   line-height: 1.5;
   margin-bottom: 1.25rem;    
   font-weight: 400;
-  
+
+}
+
+#more{ 
+    display: none;
 }
