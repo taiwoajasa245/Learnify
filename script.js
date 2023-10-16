@@ -2,7 +2,11 @@ var dots = document.querySelectorAll("#dots");
 var moreText = document.querySelectorAll("#more");
 var btnText = document.querySelectorAll("#btn-more");
 
+console.log(dots);
 
+dots.forEach((item) => { 
+    console.log(item);
+})
 
 // Define the function you want to run when a button is clicked
 function buttonClickHandler(event) {
