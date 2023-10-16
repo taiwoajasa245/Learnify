@@ -2,6 +2,7 @@ var dots = document.getElementById("dots");
 var moreText = document.getElementById("more");
 var btnText = document.getElementById("btn-more");
 
+btnText.addEventListener('click', () =>  { myFunction(); })
 
 function myFunction() {
   
