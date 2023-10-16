@@ -25,20 +25,29 @@ var btnText = document.querySelectorAll("#btn-more");
 
 // })
 
-btnText.forEach((item) => { 
-    console.log(item);
-    item.addEventListener('click', () =>  { myFunction(); })
+btnText.forEach((items) => { 
+    // console.log(item);
+    items.addEventListener('click', () =>  { myFunction()})
 })
 
+dots.forEach((item) => { 
+    // console.log(item);
+    item.addEventListener('click', () =>  { myFunction()})
+})
+
+dots.forEach((item) => { 
+    // console.log(item);
+    item.addEventListener('click', () =>  { myFunction()})
+})
 
 
 
 
 function myFunction() {
   
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
+    if (item.style.display === "none") {
+      item.style.display = "inline";
+      items.innerHTML = "Read more";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
