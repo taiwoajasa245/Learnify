@@ -69,7 +69,7 @@ Learnify is licensed under the [MIT License](LICENSE). You are free to use, modi
 
 ## Support
 
-If you have any questions, issues, or need assistance, please contact our support team at [support@learnify.com](mailto:support@learnify.com).
+If you have any questions, issues, or need assistance, please contact our support team at [support@learnify.com](ajasataiwo45@gmail.com).
 
 ## Acknowledgments
 
