@@ -1,57 +1,32 @@
-var dots = document.querySelectorAll("#dots");
-var moreText = document.querySelectorAll("#more");
-var btnText = document.querySelectorAll("#btn-more");
+var buttons = document.querySelectorAll("#btn-more");
 
-// console.log(dots);
+buttons.forEach(function (button, index) {
+  button.addEventListener("click", function () {
+    myFunction(index);
+  });
+});
 
-// dots.forEach((item) => { 
-//     console.log(items);
-// })
+// Initialize the initial state to "none"
+document.querySelectorAll("#dots").forEach(function (dots) {
+  dots.style.display = "none";
+});
 
-// // Define the function you want to run when a button is clicked
-// function buttonClickHandler(event) {
-// //   // You can access the clicked button using "event.target"
-// //   const clickedButton = event.target;
-// //   // Add your code here to handle the button click
-// //   console.log(`Button "${clickedButton.textContent}" was clicked.`);
-//   myFunction(); 
-// }
+document.querySelectorAll("#more").forEach(function (moreText) {
+  moreText.style.display = "none";
+});
 
-// // Loop through the selected buttons and attach the click event listener
-// btnText.forEach((btnText) => {
-//     btnText.addEventListener("click",  () => { 
-//         buttonClickHandler(); 
-//     });
+function myFunction(index) {
+  var dots = document.querySelectorAll("#dots")[index];
+  var moreText = document.querySelectorAll("#more")[index];
+  var btnText = document.querySelectorAll("#btn-more")[index];
 
-// })
-
-btnText.forEach((items) => { 
-    // console.log(item);
-    items.addEventListener('click', () =>  { myFunction()})
-})
-
-dots.forEach((item) => { 
-    // console.log(item);
-    item.addEventListener('click', () =>  { myFunction()})
-})
-
-moreText.forEach((itemm) => { 
-    // console.log(item);
-    itemm.addEventListener('click', () =>  { myFunction(itemm)})
-})
-
-
-
-
-function myFunction(itemm, item, items) {
-  
-    if (item.style.display === "none") {
-      item.style.display = "inline";
-      items.innerHTML = "Read more";
-      itemm.style.display = "none";
-    } else {
-      item.style.display = "none";
-      items.innerHTML = "Read less";
-      itemm.style.display = "inline";
-    }
+  if (dots.style.display === "none" || dots.style.display === "") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  }
 }
