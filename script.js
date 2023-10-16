@@ -2,30 +2,34 @@ var dots = document.querySelectorAll("#dots");
 var moreText = document.querySelectorAll("#more");
 var btnText = document.querySelectorAll("#btn-more");
 
-console.log(dots);
+// console.log(dots);
 
-dots.forEach((item) => { 
+// dots.forEach((item) => { 
+//     console.log(items);
+// })
+
+// // Define the function you want to run when a button is clicked
+// function buttonClickHandler(event) {
+// //   // You can access the clicked button using "event.target"
+// //   const clickedButton = event.target;
+// //   // Add your code here to handle the button click
+// //   console.log(`Button "${clickedButton.textContent}" was clicked.`);
+//   myFunction(); 
+// }
+
+// // Loop through the selected buttons and attach the click event listener
+// btnText.forEach((btnText) => {
+//     btnText.addEventListener("click",  () => { 
+//         buttonClickHandler(); 
+//     });
+
+// })
+
+btnText.forEach((item) => { 
     console.log(item);
+    item.addEventListener('click', () =>  { myFunction(); })
 })
 
-// Define the function you want to run when a button is clicked
-function buttonClickHandler(event) {
-//   // You can access the clicked button using "event.target"
-//   const clickedButton = event.target;
-//   // Add your code here to handle the button click
-//   console.log(`Button "${clickedButton.textContent}" was clicked.`);
-  myFunction(); 
-}
-
-// Loop through the selected buttons and attach the click event listener
-btnText.forEach((btnText) => {
-    btnText.addEventListener("click",  () => { 
-        buttonClickHandler(); 
-    });
-
-})
-
-// btnText.addEventListener('click', () =>  { myFunction(); })
 
 
 
