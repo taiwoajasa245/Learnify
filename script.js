@@ -37,13 +37,13 @@ dots.forEach((item) => {
 
 moreText.forEach((itemm) => { 
     // console.log(item);
-    itemm.addEventListener('click', () =>  { myFunction()})
+    itemm.addEventListener('click', () =>  { myFunction(itemm)})
 })
 
 
 
 
-function myFunction() {
+function myFunction(itemm, item, items) {
   
     if (item.style.display === "none") {
       item.style.display = "inline";
