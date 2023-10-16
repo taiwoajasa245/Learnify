@@ -20,6 +20,23 @@ btnText.forEach((btnText) => {
         myFunction(); 
         buttonClickHandler(); 
     });
+
+
+// Define the function you want to run when a button is clicked
+function buttonClickHandler(event) {
+  // You can access the clicked button using "event.target"
+  const clickedButton = event.target;
+  // Add your code here to handle the button click
+  console.log(`Button "${clickedButton.textContent}" was clicked.`);
+}
+
+// Loop through the selected buttons and attach the click event listener
+moreText.forEach((moreText) => {
+    moreText.addEventListener("click",  () => { 
+        myFunction(); 
+        buttonClickHandler(); 
+    });
+});
 });
 
 // btnText.addEventListener('click', () =>  { myFunction(); })
