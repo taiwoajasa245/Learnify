@@ -1,6 +1,6 @@
-var dots = document.getElementById("dots");
-var moreText = document.getElementById("more");
-var btnText = document.getElementById("btn-more");
+var dots = document.querySelectorAll("#dots");
+var moreText = document.querySelectorAll("#more");
+var btnText = document.querySelectorAll("#btn-more");
 
 btnText.addEventListener('click', () =>  { myFunction(); })
 
