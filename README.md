@@ -1,6 +1,6 @@
 # Learnify - Your Ultimate Learning Platform
 
-![Learnify Logo](images/learnify-logo.png)
+
 
 ## Table of Contents
 
